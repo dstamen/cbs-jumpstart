@@ -36,19 +36,15 @@ variable "zone" {
 variable "log_sender_domain" {
     type = string
 }
-
 variable "alert_recipients" {
     type = list(string)
 }
-
 variable "groups" {
     type = list(string)
 }
-
 variable "array_model" {
     type = string
 }
-
 variable "license_key" {
     type = string
 }

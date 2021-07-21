@@ -224,7 +224,7 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
 }
 resource "cbs_array_azure" "azure_cbs" {
 
-    array_name = format("%s%s%s", var.azure_resourcegroup, var.azure_location, "-CBS3")
+    array_name = format("%s%s%s", var.azure_resourcegroup, var.azure_location, "-CBS")
     location = azurerm_resource_group.azure_rg.location
     resource_group_name = azurerm_resource_group.azure_rg.name
     license_key = var.license_key
@@ -259,7 +259,6 @@ output "cbs_mgmt_endpoint" {
 output "cbs_mgmt_endpoint_ct0" {
     value = cbs_array_azure.azure_cbs.management_endpoint_ct0
 }
-
 output "cbs_mgmt_endpoint_ct1" {
     value = cbs_array_azure.azure_cbs.management_endpoint_ct1
 }
