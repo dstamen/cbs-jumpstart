@@ -1,4 +1,4 @@
-# See blog at https://davidstamen.com/ for more information on Azure Jump Start
+# See blog at https://davidstamen.com/2021/07/21/pure-cloud-block-store-on-azure-jump-start/ for more information on Azure Jump Start
 
 #Azure Variables
 azure_resourcegroup = "CBS-" #Prefix for Jump Start Deployment Resources
