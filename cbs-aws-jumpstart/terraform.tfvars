@@ -1,3 +1,6 @@
+# See blog at https://davidstamen.com/2021/07/26/pure-cloud-block-store-on-aws-jump-start/ for more information on AWS Jump Start
+
+
 #AWS Variables
 aws_prefix = "tf-cbs-"
 aws_access_key = "000-000-000"
