@@ -9,7 +9,6 @@ variable "azure_client_id" {
 }
 variable "azure_client_secret" {
     type = string
-    sensitive = true
 }
 variable "azure_subscription_id" {
     type = string
@@ -28,7 +27,6 @@ variable "azure_vm_username" {
 }
 variable "azure_vm_password" {
     type = string
-    sensitive = true
 }
 variable "zone" {
     type = number
@@ -36,15 +34,47 @@ variable "zone" {
 variable "log_sender_domain" {
     type = string
 }
+
 variable "alert_recipients" {
     type = list(string)
 }
+
 variable "groups" {
     type = list(string)
 }
+
 variable "array_model" {
     type = string
 }
+
 variable "license_key" {
+    type = string
+}
+
+variable "plan_name" {
+    type = string
+}
+
+variable "plan_product" {
+    type = string
+}
+
+variable "plan_publisher" {
+    type = string
+}
+
+variable "plan_version" {
+    type = string
+}
+
+variable "key_file_path" {
+    type = string
+}
+
+variable "azure_virtualnetwork_peer_name" {
+    type = string
+}
+
+variable "azure_virtualnetwork_peer_rg" {
     type = string
 }

@@ -11,6 +11,8 @@ azure_network_interface_ip_allocation = "Dynamic"
 azure_vm_size = "Standard_B1s"
 azure_vm_username = "cbs"
 azure_vm_password = "MySecurePassword"
+azure_virtualnetwork_peer_name = "TF_VNET"
+azure_virtualnetwork_peer_rg = "TF_VNET_RG"
 
 #CBS Variables
 license_key = "0000-0000-0000-0000" #CBS License key from Pure1
@@ -19,6 +21,11 @@ alert_recipients = ["user@domain.com"] #Email for Alerts
 array_model = "V10MUR1" #Array Model
 zone = 1 #Azure Zone
 groups = ["CBS-JIT-GROUP"] #Group for JIT Approval
+plan_name = "cbs_azure_6_1_8" #specify CBS Version 6.1.8 is latest.
+plan_product = "pure_storage_cloud_block_store_deployment" #Sspecify CBS Version
+plan_publisher = "purestoragemarketplaceadmin" #specify CBS Version
+plan_version = "1.0.3" #specify CBS Version
+key_file_path = "~/.ssh/id_rsa" # key file path for pureuser
 
 /* Current Supported Regions for CBS Terraform Deployment
 Australia East	        AUSTRALIAEAST
