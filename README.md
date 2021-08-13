@@ -8,4 +8,4 @@ More information can be found on how to use the Pure Cloud Block Store on Azure 
 
 ## cbs-aws-jumpstart
 
-Coming Soon
+More information can be found on how to use the Pure Cloud Block Store on AWS Jump Start [here.](https://davidstamen.com/2021/07/26/pure-cloud-block-store-on-aws-jump-start/)
